@@ -281,3 +281,10 @@ data/interview-prep/
 .next/
 web/.next/
 web/out/
+
+# Jobs4Sudanese fork: declare the fork's own files (config/local-paths.example.txt recipe).
+!config/local-paths.txt
+# Portal runtime data: every user's CV, profile, tracker and reports (PII), plus the SQLite DB.
+portal-data/
+# Pin the hosted portal's dependencies (reproducible, auditable builds).
+!portal/package-lock.json

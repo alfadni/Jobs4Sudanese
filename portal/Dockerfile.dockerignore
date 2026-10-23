@@ -1,0 +1,32 @@
+# Used by BuildKit for portal/Dockerfile instead of the root .dockerignore.
+# Everything personal is excluded HERE, at the context, because a file removed
+# in a later RUN layer still ships inside the earlier COPY layer.
+.git
+**/node_modules
+**/*.log
+.env
+.env.*
+portal-data
+# career-ops user layer (DATA_CONTRACT.md)
+cv.md
+article-digest.md
+voice-dna.md
+portals.yml
+config/profile.yml
+config/plugins.yml
+config/local-paths.txt
+modes/_profile.md
+modes/_custom.md
+modes/_brief.md
+data
+reports
+output
+jds
+documents
+interview-prep
+writing-samples
+batch/logs
+batch/tracker-additions
+batch/batch-state.tsv
+batch/batch-input.tsv
+plugins.local

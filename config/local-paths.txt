@@ -1,0 +1,6 @@
+# local-paths.txt: files this fork (Jobs4Sudanese) owns that upstream career-ops
+# does not ship. update-system.mjs apply never writes to these, and the coverage
+# guard does not report them as orphans. See config/local-paths.example.txt.
+
+# Hosted multi-user web portal (Arabic/English) built on the career-ops engine.
+portal/
